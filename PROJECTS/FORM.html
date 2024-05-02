@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SignUp form</title>
+    <style>
+        #container{
+            border: 1px solid black;
+            justify-content: center;
+            background-color: antiquewhite;
+            padding: 20px;
+            width: 300px;
+            margin: auto;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <center>
+        <div id="container">
+            <h1>SIGN UP FORM</h1>
+            <form action="#" method="post">
+                <label for="name">Name:</label><br>
+                <input type="text" id="name" name="name" required><br><br>
+                
+                <label for="birthdate">Date of Birth:</label><br>
+                <input type="date" id="birthdate" name="birthdate" required><br><br>
+                
+                <label for="age">Age:</label><br>
+                <input type="number" id="age" name="age" required><br><br>
+                
+                <label for="phone">Phone:</label><br>
+                <input type="tel" id="phone" name="phone" required><br><br>
+                
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email" required><br><br>
+                
+                <label for="gender">Gender:</label><br>
+                <select id="gender" name="gender" required>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="other">Other</option>
+                </select><br><br>
+                
+                <label for="country">Country:</label><br>
+                <input type="text" id="country" name="country" required><br><br>
+                
+                <label for="state">State:</label><br>
+                <input type="text" id="state" name="state" required><br><br>
+                
+                <label for="fatherName">Father's Name:</label><br>
+                <input type="text" id="fatherName" name="fatherName" required><br><br>
+                
+                <label for="motherName">Mother's Name:</label><br>
+                <input type="text" id="motherName" name="motherName" required><br><br>
+                
+                <label for="occupation">Occupation:</label><br>
+                <input type="text" id="occupation" name="occupation" required><br><br>
+                
+                <label for="education">Education:</label><br>
+                <input type="text" id="education" name="education" required><br><br>
+                
+                <input type="checkbox" id="terms" name="terms" required>
+                <label for="terms">I accept the terms and conditions</label><br><br>
+                
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </center>
+</body>
+</html>
