@@ -1,0 +1,29 @@
+section{
+    background-color: black;
+}
+h1{
+    color: red;
+
+}
+
+h2{
+    color:brown;
+    font-size: bolder;
+    justify-content: center;
+    font-style: italic; 
+}
+
+h3{
+ color: aqua;
+
+}
+
+b {
+    color: white;
+}
+
+#headline {
+    color: red;
+    font: bolder;
+}
+
