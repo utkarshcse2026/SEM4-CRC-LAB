@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>CSS-Table</title>
+    
+
+    <style>
+      table,
+      th,
+      td {
+        border-collapse: collapse;
+      }
+
+      table {
+        width: 100%;
+      }
+      th {
+        height: 50px;
+        border-bottom: 2px solid red;
+        background-color: coral;
+        color: white;
+        font-family: "Jersey 10", sans-serif;
+        font-size: x-large;
+      }
+
+      td {
+        height: 40px;
+        text-align: center;
+        border-bottom: 2px solid red;
+      }
+
+      tr:hover {
+        background-color: lightskyblue;
+      }
+    </style>
+  </head>
+  <body>
+    <table>
+      <tr>
+        <th colspan="4">Types of Elements</th>
+      </tr>
+      <tr>
+        <td colspan="2" style="font-weight: 600">Fruits Names</td>
+
+        <td colspan="2" style="font-weight: 600; border-left: 3px solid black">
+          Vegetables Names<span class="material-symbols-outlined">
+            nutrition
+          </span>
+        </td>
+      </tr>
+      <tr>
+        <td>mango</td>
+        <td>mango</td>
+        <td>Tomato</td>
+        <td>Tomato</td>
+      </tr>
+      <tr>
+        <td>mango</td>
+        <td>mango</td>
+        <td>Tomato</td>
+        <td>Tomato</td>
+      </tr>
+      <tr>
+        <td>mango</td>
+        <td>mango</td>
+        <td>Tomato</td>
+        <td>Tomato</td>
+      </tr>
+      <tr>
+        <td>mango</td>
+        <td>mango</td>
+        <td>Tomato</td>
+        <td>Tomato</td>
+      </tr>
+    </table>
+  </body>
+</html>

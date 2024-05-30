@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>OddEven</title>
+  </head>
+  <body>
+    <input type="text" placeholder="Enter Value" id="txt1" />
+    <button id="bt1" onclick="oddeven()">Check</button>
+    <p id="p1">print</p>
+    <script>
+      function oddeven() {
+        let num = document.getElementById("txt1").value;
+
+        if (num % 2 == 0) document.getElementById("p1").innerText = "even";
+        else document.getElementById("p1").innerText = "odd";
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,26 @@
+<!--This web Page conatins one add Button and Two Textbox, when we click on add-button a function will be called 
+    and sum of entererd value will be display in the same page-->
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <label>Enter First Number</label>
+        <input type="text" id="t1">
+        <label>Enter Second Number</label>
+        <input type="text" id="t2">
+        <button onclick="add()">Click to add</button>
+        <p> Your Result will be Display Here -> <span id="s1"></span> </p>
+        <!--JavaScript-->
+        <script>
+            function add(){  <!--Display Function Definition -->
+                var num1 = document.getElementById("t1").value;
+                var num2 = document.getElementById("t2").value;
+               document.getElementById("s1").innerText =  Number(num1)+Number(num2);
+            }
+        </script>
+    </body>
+    </html>

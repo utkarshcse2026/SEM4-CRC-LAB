@@ -1,0 +1,22 @@
+<!--This web Page conatins a button and one text box, when we click on button a function will be called 
+    and display the value of textbox in alert box-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <label>Enter Your Name</label>
+    <input type="text" id="t1">
+    <button onclick="display()">Clik Me</button>
+    <!--JavaScript-->
+    <script>
+        function display(){  <!--Display Function Definition-->
+            var name = document.getElementById("t1").value;
+            alert(name);
+        }
+    </script>
+</body>
+</html>

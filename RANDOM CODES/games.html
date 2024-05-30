@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      function diceG() {
+        var x = Math.floor(Math.random() * 6) + 1;
+        document.getElementById("g1").innerText = x;
+      }
+      function otpG() {
+        var x = Math.floor(Math.random() * (9999 - 1000)) + 1000;
+        var c = Math.floor(Math.random() * (122 - 97)) + 97;
+        c = String.fromCharCode(c);
+        document.getElementById("g2").innerText = c + x + c;
+      }
+    </script>
+    <table border="2">
+      <tr>
+        <th>Name of Game</th>
+        <th>Action</th>
+        <th>Output</th>
+      </tr>
+      <tr>
+        <td>Dice</td>
+        <td>
+          <button>
+            <img src="dice.gif" width="100px" onclick="diceG()" />
+          </button>
+        </td>
+        <td><h3 id="g1"></h3></td>
+      </tr>
+      <tr>
+        <td>OTP Generator</td>
+        <td>
+          <button class="btn btn-danger" onclick="otpG()">Click Me</button>
+        </td>
+        <td><h3 id="g2"></h3></td>
+      </tr>
+    </table>
+  </body>
+</html>

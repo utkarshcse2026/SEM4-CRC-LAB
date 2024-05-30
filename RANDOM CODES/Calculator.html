@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Calculator</title>
+  </head>
+  <body>
+    <input type="text" id="txt1" /><br />
+    <button id="bt1" onclick="funccal('1')">1</button>
+    <button id="bt1" onclick="funccal('2')">2</button><br />
+    <button id="bt1" onclick="funccal('3')">3</button>
+    <button id="bt1" onclick="funccal('4')">4</button><br />
+    <button id="bt1" onclick="funccal('5')">5</button>
+    <button id="bt1" onclick="funccal('6')">6</button><br />
+    <button id="bt1" onclick="funccal('7')">7</button>
+    <button id="bt1" onclick="funccal('8')">8</button><br />
+    <button id="bt1" onclick="funccal('9')">9</button>
+    <button id="bt1" onclick="funccal('0')">0</button><br />
+    <button id="bt1" onclick="funccal('+')">+</button>
+    <button id="bt1" onclick="funccal('-')">-</button><br />
+    <button id="bt1" onclick="funccal('*')">*</button>
+    <button id="bt1" onclick="funccal('/')">/</button><br />
+    <button id="bt1" onclick="calculate()">=</button>
+
+    <script>
+      let num = "";
+      function funccal(num) {
+        let textval = document.getElementById("txt1").value;
+        num = textval + num;
+        document.getElementById("txt1").value = num;
+
+        //document.getElementById("txt1").value += num;
+      }
+
+      // function calculate() {
+      //   let result;
+      //   let str = document.getElementById("txt1").value;
+      //   console.log(str);
+      //   result = eval(str); // eval is the inbuilt function which takes mathematical expression as str and return the calculation of the expression
+      //   console.log(result);
+      //   document.getElementById("txt1").value = result;
+      // }
+
+      const calculate = () => {
+        let result;
+        let str = document.getElementById("txt1").value;
+        console.log(str);
+        result = eval(str);
+        console.log(result);
+        document.getElementById("txt1").value = result;
+      };
+    </script>
+  </body>
+</html>

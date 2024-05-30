@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Flex</title>
+    <style>
+      #container {
+        height: 300px;
+        width: 200px;
+        background-color: lightcyan;
+        border: 2px solid;
+        display: flex;
+        flex-wrap: wrap;
+
+        align-content: flex-end;
+        margin: auto;
+      }
+      .box {
+        height: 40px;
+        width: 40px;
+        margin: 5px;
+        text-align: center;
+        border: 3px solid black;
+        border-radius: 5px;
+      }
+
+      input {
+        height: 40px;
+        width: 100%;
+        margin: 5px;
+        border-width: 2px;
+      }
+    </style>
+  </head>
+  <body>
+    <h6>Calculator</h6>
+    <div id="container">
+      <input type="text" id="txt" />
+      <button id="bt1" class="box" onclick="calfunc('1')">1</button>
+      <button id="bt2" class="box" onclick="calfunc('2')">2</button>
+      <button id="bt3" class="box" onclick="calfunc('3')">3</button>
+      <button id="bt4" class="box" onclick="calfunc('+')">+</button>
+      <button id="bt5" class="box" onclick="calfunc('4')">4</button>
+      <button id="bt6" class="box" onclick="calfunc('5')">5</button>
+      <button id="bt7" class="box" onclick="calfunc('6')">6</button>
+      <button id="bt8" class="box" onclick="calfunc('-')">-</button>
+      <button id="bt9" class="box" onclick="calfunc('7')">7</button>
+      <button id="bt0" class="box" onclick="calfunc('8')">8</button>
+      <button id="btC" class="box" onclick="calfunc('9')">9</button>
+      <button id="bteq" class="box" onclick="calfunc('*')">*</button>
+      <button id="bts" class="box" onclick="calfuncc()">C</button>
+      <button id="btsub" class="box" onclick="calfunc('0')">0</button>
+      <button id="btm" class="box" onclick="calculate()">=</button>
+      <button id="btd" class="box" onclick="calfunc('/')">/</button>
+    </div>
+
+    <script>
+      let num = "";
+
+      function calfunc(num) {
+        document.querySelector("#txt").value += num;
+      }
+
+      function calfuncc() {
+        document.querySelector("#txt").value = "";
+      }
+
+      function calculate() {
+        let result;
+        let val = document.getElementById("txt").value;
+        result = eval(val);
+        document.querySelector("#txt").value = result;
+      }
+    </script>
+  </body>
+</html>
