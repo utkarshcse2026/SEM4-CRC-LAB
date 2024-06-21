@@ -66,3 +66,48 @@ form button {
 form button:hover {
     background-color: #555;
 }
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+    background: #f4f4f4;
+}
+
+header img {
+    border-radius: 50%;
+}
+
+section {
+    padding: 20px;
+}
+
+.projects-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.job {
+    flex: 1 1 calc(50% - 20px); /* Two items per row with a 20px gap */
+    box-sizing: border-box;
+    padding: 10px;
+    background: #f4f4f4;
+    border: 1px solid #ccc;
+}
+
+.job img {
+    display: block;
+    margin: 0 auto 10px;
+}
+
+@media (max-width: 600px) {
+    .job {
+        flex: 1 1 100%;
+    }
+}
